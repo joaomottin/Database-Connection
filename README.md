@@ -7,7 +7,7 @@ Basic template to test and use a SQLAlchemy database connection using `DATABASE_
 - Python 3.10+
 - SQLAlchemy
 
-Install dependency:
+Install dependencies:
 
 ```bash
 pip install sqlalchemy
@@ -38,9 +38,9 @@ $env:DATABASE_URL="sqlite:///./app.db"
 Examples:
 
 - SQLite: `sqlite:///./app.db`
-- PostgreSQL: `postgresql+psycopg://usuario:senha@localhost:5432/meu_banco`
-- MySQL: `mysql+pymysql://usuario:senha@localhost:3306/meu_banco`
-- SQL Server: `mssql+pyodbc://usuario:senha@servidor:1433/meu_banco?driver=ODBC+Driver+18+for+SQL+Server&Encrypt=yes&TrustServerCertificate=yes`
+- PostgreSQL: `postgresql+psycopg://user:password@localhost:5432/my_database`
+- MySQL: `mysql+pymysql://user:password@localhost:3306/my_database`
+- SQL Server: `mssql+pyodbc://user:password@server:1433/my_database?driver=ODBC+Driver+18+for+SQL+Server&Encrypt=yes&TrustServerCertificate=yes`
 
 ## Run
 
@@ -48,10 +48,10 @@ Examples:
 python db_template.py
 ```
 
-Expected output on success:
+Expected output on success (current script messages):
 
-- `Conexao OK`
-- `Resultado de teste: [...]`
+- `Conexao OK` (exact current script output; means "Connection OK")
+- `Resultado de teste: [...]` (Test result: [...])
 
 ## What this script provides
 
